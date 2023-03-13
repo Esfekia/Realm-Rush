@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 129411373478150018}
   - component: {fileID: 5725170882740079995}
+  - component: {fileID: 6888605016371524329}
+  - component: {fileID: 6222097964989801160}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -31,7 +33,7 @@ Transform:
   m_Children:
   - {fileID: 701425505110478554}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5725170882740079995
 MonoBehaviour:
@@ -54,6 +56,39 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   enemySpeed: 1
+--- !u!65 &6888605016371524329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756624915032909112}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.8195753, y: 4.2087245, z: 4.876835}
+  m_Center: {x: 0.07851553, y: 2.2341964, z: -0.10703945}
+--- !u!114 &6222097964989801160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756624915032909112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbd202f022ae96549b7a858e24eebf3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8578752256778460641
 GameObject:
   m_ObjectHideFlags: 0
