@@ -48,14 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d1e8d4403231ea46a905644d44fe5b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  path: []
   enemySpeed: 1
 --- !u!65 &6888605016371524329
 BoxCollider:
@@ -103,6 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4bbcf3b3668454bb49343481517b9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldReward: 25
+  goldPenalty: 25
 --- !u!1 &8578752256778460641
 GameObject:
   m_ObjectHideFlags: 0
