@@ -5,8 +5,8 @@ using UnityEngine;
 public class ObjectPool : MonoBehaviour
 {
     [SerializeField] GameObject pooledEnemy;
-    [SerializeField] float spawnTimer = 1;
-    [SerializeField] int poolSize = 5;
+    [SerializeField] [Range(0.1f, 60f)] float spawnTimer = 1;
+    [SerializeField] [Range(1, 50f)] int poolSize = 5;
 
     GameObject[] pool;
     // Start is called before the first frame update
