@@ -10,11 +10,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Gatehouse
   - Water
   - UI
-  - 
-  - 
+  - Tile
+  - PostProcessing
   - 
   - 
   - 
