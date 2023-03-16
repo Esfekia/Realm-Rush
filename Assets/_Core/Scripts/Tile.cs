@@ -35,11 +35,14 @@ public class Tile : MonoBehaviour
     void OnMouseDown(){
         if (gridManager.GetNode(coordinates).isWalkable && !pathfinder.WillBlockPath(coordinates))  
         {
-            bool isPlaced = towerPrefab.CreateTower(towerPrefab, transform.position);
-            
-            // this way we will not block tiles who could not be created due to money
-            isPlaceable = !isPlaced;
-            gridManager.BlockNode(coordinates);
+            bool isSuccessful = towerPrefab.CreateTower(towerPrefab, transform.position);
+
+            if (isSuccessful)
+            {
+                gridManager.BlockNode(coordinates);
+                pathfinder.NotifyReceivers();
+            }
+
         }       
         
     }
